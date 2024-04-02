@@ -1,0 +1,207 @@
+.wrap {
+    max-width: 120rem;
+    min-width: 32rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2.5rem 1rem;
+    gap: 1rem;
+}
+.common_box {
+    border-radius: 0.5rem;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 0.4rem 1rem 0 rgba(0,0,0,0.2), 0 0.4rem 2rem 0 rgba(0,0,0,0.19);
+}
+
+/* 명함 */
+.card_box {
+    width: 45rem;
+    padding: 3.5rem;
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.card_job {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1.2rem;
+}
+.name_ko { font-size: 2.5rem; color: black; font-weight: bold;}
+.name_eng {font-size: 1.1rem; color: #a1a1a1;}
+.job {
+    font-size: 1.6rem; 
+    background: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold; 
+    padding-top: 0.8rem;
+    padding-bottom: 3rem;
+}
+.card_img {
+    width: 13rem;
+    height: 17rem;
+    border-radius: 0.5rem;
+    background-image: url("../img/me.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.item_list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+}
+.item_list > div {
+    display: flex;
+    flex-direction: column;
+}
+.item_list > div > span {
+    padding-top: 0.8rem;
+}
+.item_type {
+    color: rgba(223, 66, 65, 0.7);
+    font-weight: bold;
+}
+.design_bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: rgba(223, 66, 65, 0.7);
+}
+
+
+
+/* SNS */
+
+.sns_btn:nth-child(1) {color: #2F3138;}
+.sns_btn:nth-child(2) {color: #4267B2;}
+.sns_btn:nth-child(3) {color: #DA4536;}
+.sns_btn:nth-child(4) {color: #553424;}
+.sns_btn:nth-child(5) {color: #ff0000;}
+.sns_btn:nth-child(6) {color: #2F3138;}
+
+.sns_box {
+    width: 45rem;
+    padding: 1.5rem;
+
+}
+.middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sns_btn {
+    display: inline-block;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #f1f1f1;
+    margin: 0 1rem;
+    border-radius: 30%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.sns_btn i {
+    line-height: 4.5rem;
+    font-size: 2rem;
+    transition: 0.2s linear;
+}
+
+/* Skill */
+.info_box {padding: 0 1.5rem 1.5rem 1.5rem; flex-direction: column;}
+.sub_box {margin-top: 1.5rem;}
+.sub_title {font-size: 1.6rem; font-weight: bold; border-left: 0.4rem solid #2F3138; padding-left: 0.5rem;}
+.skill_box {width: 100%; font-size: 1.2rem;}
+.bar_wrap {margin-bottom: 1.5rem;}
+.skill_title {padding: 0 0 0.5rem 0.8rem;}
+.bar_border {
+    width: 100%;
+    height: 2rem;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    border-radius: 1.6rem;
+}
+.bar_fill {
+    height: 2rem;
+    /*background: #008CF1;*/
+    background: rgba(0, 140, 241, 0.7);
+    padding: 0 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* License */
+.item_sign > span {
+    padding-left: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 스마트폰
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Device = 대부분의 스마트폰 모바일 기기(세로)
+	##Screen = 320px에서 768px 사이
+*/
+@media (min-width: 320px) and (max-width: 768px) {
+	.html, body { font-size: 50%;}
+    body { 	
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+    }
+	.wrap {transform: rotate(90deg);}
+    .sns_box, .info_box {display: none;}
+	
+}
