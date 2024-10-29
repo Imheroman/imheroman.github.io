@@ -14,7 +14,6 @@ function checkAnswer() {
     const resultDiv = document.getElementById("result");
 
     console.log("user answer: {}", userAnswer);
-    console.log("result: {}", resultDiv);
 
     if (userAnswer === correctAnswer) {
         resultDiv.innerText = "정답입니다 !";
